@@ -1,0 +1,78 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+.img1{
+  background: url(../img/image1.jpg);
+  min-height: 100%;
+}
+.img2{
+  background: url(../img/image2.jpg);
+  min-height: 400px;
+}
+.img3{
+  background: url(../img/image3.jpg);
+  min-height: 400px;
+}
+.img1, .img2, .img3{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* the main scrolling effect */
+  background-attachment: fixed;
+  opacity: .70;
+}
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+.section-light{
+  background: #f4f4f4;
+  color: #666;
+}
+.section-dark{
+  background: #282e34;
+  color: #ddd;
+}
+.text{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.border{
+  background: #111;
+  color: #fff;
+  padding: 20px;
+}
+.tranparent{
+  background-color: tranparent;
+}
+
+@media(max-width:568px){
+  .img1, .img2, .img3{
+    background-attachment: scroll;
+  }
+  .text{
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+@media(max-width:353px){
+  .text{
+    font-size: 12px;
+    padding: 5px;
+    letter-spacing: 2px;
+  }
+}
